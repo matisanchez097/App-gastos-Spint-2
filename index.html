@@ -9,32 +9,43 @@
     <title>App de gastos</title>
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid dflex align-items-center justify-content-center vh-100">
         <div class="row">
             <div class="col-4"></div>
             <div class="col-4">
-                <h2>Aplicacion para dividir gastos</h2>
-                <div class="flex-container">
-                    <h3>Ingrese nombre y gasto</h3>
-                </div>
-                <div class="flex-container">
-                    <input type="text" id="nombre" placeholder="Ingrese nombre">
-                    <input type="number" id="monto" placeholder="Ingrese monto">
-                </div>
-                <div class="flex-container">
-                    <button onclick="Agregar(nombre.value, monto.value)">Calcular</button>
-                    <button onclick="borrarUno()">Borrar</button>
-                </div>
-                <div class="flex-container" id="datos">
-                    <!-- InnerHTML -->
-                </div>
-                <div class="flex-container" id="total">
-                    <!-- InnerHTML -->
+                <div class="card">
+                    <div class="card-titulo d-inline-flex align-items-center justify-content-center bg-primary text-light">
+                        <div class="card-titulo1 text-center  py-4 f-s">
+                            <h2>Aplicacion para dividir gastos</h2>
+                            <h3>Ingrese nombre y gasto</h3>
+                        </div>
+                    </div>
+                    <div class="card-body d-flex flex-column align-items-center justify-content-center m3-3">
+                        <div class="card-body-input">
+                            <input type="text" id="nombre" placeholder="Ingrese nombre">
+                            <input type="number" id="monto" placeholder="Ingrese monto">
+                        </div>
+                    </div>
+                    <div class="card-body d-flex flex-column align-items-center justify-content-center m3-3">    
+                    <div class="card-body-button d-flex justify-content-around">
+                        <div class="button">
+                            <button onclick="Agregar(nombre.value, monto.value)" class="btn btn-primary p-2">Calcular</button>
+                            <button onclick="borrarUno()" class="btn btn-primary p-2">Borrar</button>
+                        </div>
+                    </div>
+                    </div>
+                        <div class="flex-container border" id="datos">
+                            <!-- InnerHTML -->
+                        </div>
+                        <div class="flex-container d-flex align-items-center justify-content-center " id="total">
+                            <!-- InnerHTML -->
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-4"></div>
         </div>
     </div>
-        <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

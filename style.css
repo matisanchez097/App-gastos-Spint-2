@@ -1,0 +1,15 @@
+.flex-item {
+    margin-top: 10px;
+}
+
+.flex-item p {
+    text-align: center;
+}
+
+.flex-item-input p {
+    text-align: center;
+}
+
+.flex-item-input {
+    border: 1px solid rgb(209, 208, 208);
+}

@@ -13,8 +13,8 @@ function calcular(){
     var totalM = document.getElementById("total");
     totalM.innerHTML =`
     <div class="flex-item">
-    <p>El total gastado fue: $${total}</p>
-    <p>Cada uno debe pagar: $${apagar}</p>
+    <p>El total gastado fue: <b>$${total}</b></p>
+    <p>Cada uno debe pagar: <b>$${apagar}</b</p>
     </div> 
     `;
 }
@@ -40,8 +40,8 @@ function funImprimir(){
     nuevo.innerHTML ="";
     for (let i = 0; i < montos.length; i++){
         nuevo.innerHTML +=`
-        <div class="flex-item">
-        <p>${nombres[i]} gasto: $${montos[i]}</p>
+        <div class="flex-item-input">
+        <p><b>${nombres[i]}</b> Gasto: <b>$${montos[i]}</b></p>
         </div>
         `;
     }
